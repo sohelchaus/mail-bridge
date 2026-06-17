@@ -19,16 +19,16 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
-    background-color: var(--bg);
     color: var(--fg);
+    background-color: var(--bg);
 }
 
 h1 {
-    font-size: clamp(2rem, 1rem + 3vw, 4rem);
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
 }
 
 h2 {
@@ -49,9 +49,12 @@ i {
 }
 
 .card-container {
-    max-width: 80%;
+    width: calc(100% - 2rem);
     height: auto;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 1rem;
     padding: 0.5rem;
     border-radius: var(--radius);
     color: var(--fg) background-color: var(--bg);
@@ -64,6 +67,8 @@ i {
 
 .card-top,
 .card-bottom {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +101,7 @@ i {
 /* ============= */
 .message-card {
     width: 100%;
+    height: auto;
     overflow: hidden;
     border-radius: var(--radius);
     border: 0.0625rem solid var(--fg);
