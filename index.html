@@ -17,9 +17,11 @@
         <div class="card-container">
             <!-- EMAIL LINK -->
             <div class="card-top">
-                <h1>📢 Support 11,000 Palestinian <span id="text-highlight">Prisoners</span></h1><br>
-                <p>Click link below to Mail</p><br>
-                <button class="mail-btn" onclick="openEmailApp()">Send Mail</button><br>
+                <h1>Support 11,000 Palestinian <span id="text-highlight">Prisoners</span></h1><br>
+                <p>Click link below to Mail</p>
+                <a href="javascript:void(0)" onclick="launchEmailTemplate('palestineAwareness')" class="mail-btn">
+                    Send Mail
+                </a>
             </div>
             <p>OR</p>
 
@@ -33,7 +35,14 @@
         <!-- DRAFT MESSAGE -->
         <!-- ============= -->
         <div class="card-container">
-            <p>Copy "Draft Message" and <span id="text-highlight">Mail</span> to :</p><br>
+            <!-- GUIDE TO MAIL -->
+            <div class="card-instruction">
+                <p><span id="text-highlight">Mail to</span> : <br>sgcentral@un.org, <br>ohchr-InfoDesk@un.org</p><br>
+                <p><span id="text-highlight">Subject</span> : <br>Urgent Appeal to Protect Innocent Lives</p><br>
+                <p>Copy and paste <span id="text-highlight">Draft Message</span> into mail.</p><br>
+            </div>
+
+            <!-- MESSAGE -->
             <div class="message-card">
                 <div class="card-header">
                     <span class="card-title">Draft message</span>
@@ -53,9 +62,25 @@
 
                 <div class="card-body">
                     <div class="body-content">
-                        <p>This is paragraph line one of your drafted message.</p>
-                        <p>This is paragraph line two, matching your sketch layout.</p>
-                        <p>And here is the final line at the bottom of the expanded view.</p>
+                        <p>Dear Sir/Madam,</p>
+
+                        <p>I am writing to express my deep concern regarding the situation in Palestine, where reports
+                            indicate that around 11,000 innocent people are at serious risk.</p>
+
+                        <p>This is not just a number, but thousands of human lives that deserve protection, dignity, and
+                            justice. I humbly urge your organization to take immediate notice of this situation and use
+                            all
+                            possible means to raise this issue at international platforms.</p>
+
+                        <p>We request urgent intervention to prevent any further loss of innocent lives and to ensure
+                            that
+                            justice and human rights are upheld.</p>
+
+                        <p>Even as individuals, we believe our collective voices can create awareness and push for
+                            meaningful action.</p>
+
+                        <p>Thank you for your time and attention.</p>
+
                     </div>
                 </div>
             </div>
