@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ummah Voice</title>
+    <link rel="icon" href="#" type="png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="card-container">
+            <!-- EMAIL LINK -->
+            <div class="card-top">
+                <h1>📢 Support 11,000 Palestinian <span id="text-highlight">Prisoners</span></h1><br>
+                <p>Click link below to Mail</p><br>
+                <button class="mail-btn" onclick="openEmailApp()">Send Mail</button><br>
+            </div>
+            <p>OR</p>
+
+            <div class="card-bottom">
+                <img src="/assets/qr_code.png" alt="QR Code" class="card-img">
+            </div>
+            <p>OR</p>
+        </div>
+
+        <!-- ============= -->
+        <!-- DRAFT MESSAGE -->
+        <!-- ============= -->
+        <div class="card-container">
+            <p>Copy "Draft Message" and <span id="text-highlight">Mail</span> to :</p><br>
+            <div class="message-card">
+                <div class="card-header">
+                    <span class="card-title">Draft message</span>
+
+                    <div class="actions">
+                        <button class="copy-btn" onclick="copyContent(this)" title="Copy to clipboard">
+                            Copy
+                        </button>
+
+                        <span class="divider">|</span>
+
+                        <button class="toggle-btn" onclick="toggleCard(this)" title="Toggle content">
+                            <i class="fa-solid fa-chevron-down chevron-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="body-content">
+                        <p>This is paragraph line one of your drafted message.</p>
+                        <p>This is paragraph line two, matching your sketch layout.</p>
+                        <p>And here is the final line at the bottom of the expanded view.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
